@@ -29,8 +29,10 @@ h3, h4, h5 {
 }
 
 h3 { 
-	color:#000000;
+	color:#737373;
+	font-size: 15px;
 	font-weight: 400;
+	padding-top: 30px;
 }
 
 h4 {
@@ -102,9 +104,10 @@ h5 {
 	padding-left: 10%;
 }
 .suscripcion {
+	display: flex;
 	width: 100%;
-	align-content: center;
-	align-self: center;
+	justify-content: center;
+	padding-top: 20px;
 
 }
 #logo {
@@ -174,9 +177,6 @@ div a img {
 footer {
 	width: 100%;
 	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-self: center;
 	margin-top: 20px;
 	margin-bottom: 0px;
 }
@@ -204,10 +204,37 @@ footer {
 	align-self:center;
 	align-items: center;
 }
-.boton-suscrip {
+.suscribirse-boton {
+	display: flex;
+	justify-content: center;
+}
+
+.contacto {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	padding-top: 40px;
+	padding-bottom: 25px;
+}
+.datos {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 13%;
+	padding-right: 10%;
+}
+.atencion {
+	display: flex;
+	justify-content: center;
+	padding-top: 25px;
+}
+.ayuda {
+	display: flex;
+	justify-content:center;
+	padding-top: 40px;
+	padding-bottom: 25px;
+}
+.listado {
+	display: block;
 }
 .botonera-02 {
 }
