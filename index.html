@@ -11,11 +11,18 @@
 <body>
 	<header>
 		<div id="cuotas"> 
-		  <p> 3 CUOTAS SIN INTERÉS EN TODAS TUS COMPRAS! 6 Y 12 CUOTAS CON INTERÉS. AMEX/VISA Y MASTERCARD Y CABAL DE TODOS LOS BANCOS. </p>
-		  <p><br>
-	      </p>
+		  <p> 3 CUOTAS SIN INTERÉS EN TODAS TUS COMPRAS! 6 Y 12 CUOTAS . AMEX/VISA Y MASTERCARD Y CABAL DE TODOS LOS BANCOS. </p>
         </div> 
-		<div id="barra">
+		<div id="menu-small">
+	    	<div id="desplegable"><img src="imagenes/menu-header.png" width="30" height="28" alt="menu"/></div>
+			<div class="logo-small">
+				<img src="imagenes/logo.svg" alt="complot"/></div>
+	    	<div id="lupa-shop">
+				<img src="imagenes/shop.png" width="30" height="28" alt="shop"/>
+				<img src="imagenes/lupa.png" width="30" height="28" alt="lupa"/>
+			</div>
+		</div>
+	  <div id="barra">
 		<a class="fav">FAVORITOS</a> <a class="ingreso">INGRESAR O CREAR UNA CUENTA</a></div>
 		<div id="logo"> 
 			<img src="imagenes/logo.svg" alt="complot"/>
@@ -26,6 +33,7 @@
 		</div>
 	</header>
 	<main>
+		<!-- esta parte todavia falta hacerla funcionar bien T_T -->
 		<div class="gallery">
 			<a href="banner01" data-fancybox="gallery">
 			<img src="imagenes/carrusel/banner-home-01.jpg" width="2440" height="1167" alt="banner01"/></a>
@@ -44,6 +52,7 @@
 			<a href="banner08" data-fancybox="gallery" >
 			<img src="imagenes/carrusel/banner-home-08.jpg" width="2440" height="1167" alt="banner08"/></a>
 		</div>
+		<!-- falta hacer responsive esta botonera de imagenes -->
 		<section class="botonera-img">
 			<div class="botonera-imagenes-01">
 				<a class="boton" href="jeans" data-fancybox="botonera-imagenes">
@@ -76,33 +85,34 @@
 			<div class="mail"> TU E-MAIL</div>
 			<div class="suscribirse-boton"><img src="imagenes/suscribirse.png" width="125" height="40" alt=""/></div>
 		</div>
-		<div class="contacto">CONTACTO</div>
-	  		<div class="datos">
+			<div class="contacto"> <p class="titulos-listas">CONTACTO </p>
+	  			<ul class="datos">
 				<h3>0810 220 7625</h3>
 				<h3>AYUDA@COMPLOT.COM.AR</h3>
 		  		<h3>NUESTROS LOCALES </h3>
-			</div>
-<!-- esta parte queda arreglarla, se me complico organizar las 3 columnas y el espacio entre elementos-->
+			</ul>
+		</div>
 				<div class="listas-footer">
 					<ul class="lista"> 	
-						<p>TALLES Y CUIDADOS</p>
+						<p class="titulos-listas">TALLES Y CUIDADOS</p>
 						<li>TABLA DE TALLES Y CUIDADOS</li>
 					</ul>
 					<ul class="lista"> 	
-					<p>AYUDA</p>
-					<li>CÓMO COMPRAR</li>
-					<li>ENVÍOS</li>
-					<li>FORMAS DE PAGO</li>
-					<li>CAMBIOS Y DEVOLUCIONES</li>
-					<li>PREGUNTAS FRECUENTES</li>
-					<li>SEGUIMIENTO DE PEDIDO</li>
-					<li>TÉRMINOS Y CONDICIONES</li>
-					<li>POLÍTICAS DE PRIVACIDAD</li>
+						<p class="titulos-listas">AYUDA</p>
+						<li>CÓMO COMPRAR</li>
+						<li>ENVÍOS</li>
+						<li>FORMAS DE PAGO</li>
+						<li>CAMBIOS Y DEVOLUCIONES</li>
+						<li>PREGUNTAS FRECUENTES</li>
+						<li>SEGUIMIENTO DE PEDIDO</li>
+						<li>TÉRMINOS Y CONDICIONES</li>
+						<li>POLÍTICAS DE PRIVACIDAD</li>
+						</ul>
+					<ul class="lista"><p class="titulos-listas">SOBRE COMPLOT</p>
+						<li>TRABAJA CON NOSOTROS</li>
+						<li>NUESTROS LOCALES</li>
+						<li>CONTACTO</li> 
 					</ul>
-					<ul class=lista><p>SOBRE COMPLOT</p>
-					<li>TRABAJA CON NOSOTROS</li>
-					<li>NUESTROS LOCALES</li>
-					<li>CONTACTO</li> </ul>
 				</div>
 	</footer>
 <script>
