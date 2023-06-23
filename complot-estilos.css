@@ -170,7 +170,17 @@ div a img {
 	padding-bottom: 40px;
 	padding-top: 20px;
 }
-.botonera-imagenes-01, .botonera-imagenes-02 {
+.botonera-imagenes-01 {
+	width: 100%;
+	display: flex;
+	box-sizing: border-box;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 100px;
+	gap: 1%;
+}
+
+.botonera-imagenes-02 {
 	width: 100%;
 	display: flex;
 	box-sizing: border-box;
@@ -337,7 +347,11 @@ li {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		
+	}
+	
+	.botonera-imagenes-01{
+		padding-top: 110px;
+	}
 	}
 	.lista {
 		display: flex;
