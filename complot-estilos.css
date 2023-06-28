@@ -16,7 +16,7 @@ body{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 40px;
+	padding-bottom: 80px;
 }
 
 header {
@@ -214,7 +214,8 @@ footer {
 	height: 100%;
 	margin-top: 20px;
 	margin-bottom: 0px;
-	padding-left: 20px;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 	.newsletter {
 	display: flex;
@@ -255,11 +256,13 @@ footer {
 	align-items: center;
 	padding-top: 40px;
 	padding-bottom: 25px;
-	box-sizing: border-box;
+ 	border-top: 1px solid #797979;
+  	border-bottom: 1px solid #797979;;
 }
 .contacto h3 {
 	width: 33%;
 	text-align: center;
+	padding-bottom: 40px;
 }
 
 .datos {
