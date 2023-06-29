@@ -58,17 +58,17 @@ h5 {
 }
 
 #cuotas {
-		padding: 15px;
-		width: 100%;
-		align-items: center;
-		align-content: center;
-		font-family: lato;
-		font-style: normal;
-		font-size: 12px;
-		line-height: 15px;
-		color: #FFFFFF;
-		background: #000000;
-		text-align: center;
+	padding: 15px;
+	width: 100%;
+	align-items: center;
+	align-content: center;
+	font-family: lato;
+	font-style: normal;
+	font-size: 12px;
+	line-height: 15px;
+	color: #FFFFFF;
+	background: #000000;
+	text-align: center;
 	}
 
 p {
@@ -77,15 +77,14 @@ p {
 
 .fav { 
 	display: flex; 
-	margin-right: 60px;
+	margin-right: 20px;
 	box-sizing: content-box;
-	text-decoration: underline;
-	}
+	text-decoration: underline;	}
 
 .ingreso {
 	display: flex;
 	box-sizing: content-box;
-	margin-left: -40px;
+	column-gap: 10px;
 }
 #cuotas{
 	width: 100%;
@@ -111,12 +110,14 @@ p {
 	padding-right: 5%;
 	padding-left: 10%;
 }
+
 .suscripcion {
 	display: flex;
 	width: 100%;
 	justify-content: center;
 	padding-top: 20px;
 }
+
 #logo {
 	display:flex;
 	justify-content: center;
@@ -129,6 +130,7 @@ p {
 	display: block;
 	box-sizing: border-box;
 }
+
 #menu-small {
 	width: 100%;
 	display: none;
@@ -148,9 +150,9 @@ p {
 }
 
 .navegacion{
-margin-left: 40px;
-margin-right: 40px;
-}
+	margin-left: 40px;
+	margin-right: 40px;
+	}
 
 .gallery {
 	display:flex;
@@ -173,12 +175,16 @@ div a img {
 	padding-top: 140px;
 	display: grid;
 	grid-template-columns: 33% 33% 33%;
-	grid-gap: 1%;
+	grid-template-rows: auto;
+	grid-gap: 10px;
+	justify-content: space-around;
 }
 
 .grid-container img {
 	width: 100%;
 	display: block;
+	grid-gap: 1%;
+	justify-content: space-around;
 }
 
 .hashtag {
@@ -222,7 +228,7 @@ footer {
 	flex-direction: column;
 	color:#000000;
 	margin-top: 25px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	align-items: center;
 }
 
@@ -230,7 +236,7 @@ footer {
 	text-decoration: underline;
 	text-align: center;
 	font-size: 12px;
-	margin-top: 20px;
+	margin-top: 40px;
 	margin-bottom: 20px;
 }
 
@@ -290,18 +296,20 @@ footer {
 li { 
 	padding: 2px;
 	font-size: 12px;
+	color: #797979;
 }
 
 .listas-footer {
 	display: flex;
 }
 
-	.lista {
-		display: flex;
-		flex-direction: column;
-		width: 33%;
-		list-style: none;
+.lista {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	list-style: none;
 }
+
 .titulos-listas {
 	font-size: 12px;
 	padding-bottom: 30px;
@@ -309,37 +317,45 @@ li {
 }
 
 @media screen and (max-width:768px) {
+	
 	#barra {
 		display: none;
 	}
 	.botonera-head {
 		display: none;
 	}
-	#logo{
+	
+	#logo {
 	display: none;
 	}
-	.gallery{
-		display: none;
+	
+	.gallery {
+	display: none;
 	}
-	#cuotas{
+	
+	#cuotas {
 		padding-bottom: 30px;
 	}
-#menu-small {
+	
+	#menu-small {
 	display: flex;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 05px;
 	padding-right: 05px;
-		}
+	}
+	
 	.logo-small {
 		width: 100%;
 		display: flex;
 		align-self: center;
 		justify-content: center;
 	}
+	
 	header {
 		padding-bottom:0px;
 	}
+	
 	.listas-footer {
 		display: flex;
 		flex-direction: column;
@@ -347,17 +363,22 @@ li {
 	}
 	
 	.grid-container {
+	display: grid;
 	width: 100%;
-	height: 100%;
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-top: 140px;
-	gap: 1%;
 	grid-template-columns: 50% 50%;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
 	}
 	
-	.lista {
-		display: flex;
-		flex-direction: column;
-		padding-top: 30px
+.grid-container img {
+	display: grid;
+	padding:0;
+	grid-area: 2px;
+	justify-content: space-between;
+	gap-area: 5px;
 	}
+}
+	
