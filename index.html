@@ -1,117 +1,131 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>index</title>
-<link href="complot-estilos.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index</title>
+	<link href="complot-estilos.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
 </head>
 <body>
 	<header>
-		<div id="cuotas"> 
-		  <p> 3 CUOTAS SIN INTERÉS EN TODAS TUS COMPRAS! 6 Y 12 CUOTAS . AMEX/VISA Y MASTERCARD Y CABAL DE TODOS LOS BANCOS. </p>
-        </div> 
+		<div id="cuotas">
+			<p>3 CUOTAS SIN INTERÉS EN TODAS TUS COMPRAS! 6 Y 12 CUOTAS. AMEX/VISA Y MASTERCARD Y CABAL DE TODOS LOS BANCOS.</p>
+		</div>
 		<div id="menu-small">
-	    	<div id="desplegable"><img src="imagenes/menu-header.png" width="30" height="28" alt="menu"/></div>
+			<div id="desplegable">
+				<img src="imagenes/menu-header.png" width="30" height="28" alt="menu"/> 
+			</div>
+			
 			<div class="logo-small">
-				<img src="imagenes/logo.svg" alt="complot"/></div>
-	    	<div id="lupa-shop">
+				<img src="imagenes/logo.svg" alt="complot"/>
+			</div>
+			<div id="lupa-shop">
 				<img src="imagenes/shop.png" width="30" height="28" alt="shop"/>
 				<img src="imagenes/lupa.png" width="30" height="28" alt="lupa"/>
 			</div>
 		</div>
-	 	<div id="barra">
-		<a class="fav">FAVORITOS</a> <a class="ingreso">INGRESAR O CREAR UNA CUENTA</a>
+		<div id="barra">
+			<a class="fav">FAVORITOS</a>
+			<a class="ingreso">INGRESAR O CREAR UNA CUENTA</a>
 		</div>
-		<div id="logo"> 
+		<div id="logo">
 			<img src="imagenes/logo.svg" alt="complot"/>
 		</div>
-	  	<div class="botonera-head">
-			<ul class="navegacion"><strong>AW23</strong> <a>SHOP</a> <a>ESSENCIALS</a> <a>OUTLET</a></ul>
-		<a id="buscar"><img src="imagenes/buscar.png" width="145" height="20" alt="lupa"/> </a>
+		<div class="botonera-head">
+			<ul class="navegacion">
+				<a>AW23</a>
+				<a>SHOP</a>
+				<a>ESSENCIALS</a>
+				<a>OUTLET</a>
+			</ul>
+			<a id="buscar"><img src="imagenes/buscar.png" width="145" height="20" alt="lupa"/></a>
 		</div>
 	</header>
 	<main>
-		<!-- esta parte todavia falta hacerla funcionar bien T_T -->
+		<div class="espacio-header"></div>
 		<div class="gallery">
-			<a href="banner01" data-fancybox="gallery">
-			<img src="imagenes/carrusel/banner-home-01.jpg" width="2440" height="1167" alt="banner01"/></a>
-			<a href="banner02" data-fancybox="gallery" >
-			<img src="imagenes/carrusel/banner-home-02.jpg" width="2440" height="1167" alt="banner02"/></a>
-			<a href="banner03" data-fancybox="gallery" >
-			<img src="imagenes/carrusel/banner-home-03.jpg" width="2440" height="1167" alt="banner03"/></a>
-			<a href="banner04" data-fancybox="gallery" >
-			<img src="imagenes/carrusel/banner-home-04.jpg" width="2440" height="1167" alt="banner04"/></a>
-			<a href="banner05" data-fancybox="gallery" >
-			<img src="imagenes/carrusel/banner-home-05.jpg" width="2440" height="1167" alt="banner05"/></a>
-			<a href="banner06" data-fancybox="gallery" >
-			<img src="imagenes/carrusel/banner-home-06.jpg" width="2440" height="1167" alt="banner06"/></a>
-			<a href="banner07" data-fancybox="gallery" >
-			<img src="imagenes/carrusel/banner-home-07.jpg" width="2440" height="1167" alt="banner07"/></a>
-			<a href="banner08" data-fancybox="gallery" >
-			<img src="imagenes/carrusel/banner-home-08.jpg" width="2440" height="1167" alt="banner08"/></a>
+			<a data-fancybox="gallery" href="imagenes/carrusel/banner-home-01.jpg"><img src="imagenes/carrusel/banner-home-01.jpg" width="2440" height="1167" alt="banner01"/></a>
+			<a data-fancybox="gallery" href="imagenes/carrusel/banner-home-02.jpg"></a>
+			<a data-fancybox="gallery" href="imagenes/carrusel/banner-home-03.jpg"></a>
+			<a data-fancybox="gallery" href="imagenes/carrusel/banner-home-04.jpg"></a>
+			<a data-fancybox="gallery" href="imagenes/carrusel/banner-home-05.jpg"></a>
+			<a data-fancybox="gallery" href="imagenes/carrusel/banner-home-06.jpg"></a>
+			<a data-fancybox="gallery" href="imagenes/carrusel/banner-home-07.jpg"></a>
+			<a data-fancybox="gallery" href="imagenes/carrusel/banner-home-08.jpg"></a>
 		</div>
-			<section class="grid-container">
-				<img src="imagenes/botonera-imagenes/boton-jeans.jpg" alt="Jeans"/>
-				<img src="imagenes/botonera-imagenes/boton-lookbook.jpg" alt="Lookbook"/>
-				<img src="imagenes/botonera-imagenes/boton-accesorios.jpg" alt="Accesorios"/>
-				<img src="imagenes/botonera-imagenes/boton-sport.jpg" alt="Sport"/>
-				<img src="imagenes/botonera-imagenes/boton-abrigos.jpg" alt="Abrigos"/>
-				<img src="imagenes/botonera-imagenes/boton-standart-series.jpg" alt="Standart"/>
-			</section>
-			<section class="hashtag">#COMPLOTROCK</section>
-			<div class="botonera-redes">
-		    	<img src="imagenes/botonera-redes/boton-fb.jpg" width="250" height="250" alt="Facebook"/>
-				<img src="imagenes/botonera-redes/boton-ig.jpg" width="250" height="250" alt="Instagram"/>
-				<img src="imagenes/botonera-redes/boton-tiktok.jpg" width="250" height="250" alt="Tiktok"/>
-				<img src="imagenes/botonera-redes/boton-youtube.jpg" width="250" height="250" alt="Youtube"/>
-			</div>
+		<section class="grid-container">
+			<img src="imagenes/botonera-imagenes/boton-jeans.jpg" alt="Jeans"/>
+			<img src="imagenes/botonera-imagenes/boton-lookbook.jpg" alt="Lookbook"/>
+			<img src="imagenes/botonera-imagenes/boton-accesorios.jpg" alt="Accesorios"/>
+			<img src="imagenes/botonera-imagenes/boton-sport.jpg" alt="Sport"/>
+			<img src="imagenes/botonera-imagenes/boton-abrigos.jpg" alt="Abrigos"/>
+			<img src="imagenes/botonera-imagenes/boton-standart-series.jpg" alt="Standart"/>
+		</section>
+		<section class="hashtag">#COMPLOTROCK</section>
+		<div class="botonera-redes">
+			<img src="imagenes/botonera-redes/boton-fb.jpg" width="250" height="250" alt="Facebook"/>
+			<img src="imagenes/botonera-redes/boton-ig.jpg" width="250" height="250" alt="Instagram"/>
+			<img src="imagenes/botonera-redes/boton-tiktok.jpg" width="250" height="250" alt="Tiktok"/>
+			<img src="imagenes/botonera-redes/boton-youtube.jpg" width="250" height="250" alt="Youtube"/>
+		</div>
 	</main>
 	<footer>
 		<div class="newsletter">
-			<p class="suscripcion"> SUSCRIBETE AL NEWSLETTER</p>
-			<p class="mail"> TU E-MAIL</p>
-			<img src="imagenes/suscribirse.png" width="125" height="40" alt=""/>
+			<p class="suscripcion">SUSCRIBETE AL NEWSLETTER</p>
+			<p class="mail">TU E-MAIL</p>
+			<img src="imagenes/suscribirse.png" width="125" height="40" alt="suscribirse"/>
 		</div>
-			<div class="contacto"> <p class="titulos-listas">CONTACTO </p>
-	  			<ul class="datos">
+		<div class="contacto">
+			<p class="titulos-listas">CONTACTO</p>
+			<ul class="datos">
 				<h3>0810 220 7625</h3>
 				<h3>AYUDA@COMPLOT.COM.AR</h3>
-		  		<h3>NUESTROS LOCALES </h3>
+				<h3>NUESTROS LOCALES</h3>
 			</ul>
 		</div>
-				<div class="listas-footer">
-					<ul class="lista"> 	
-						<p class="titulos-listas">TALLES Y CUIDADOS</p>
-						<li>TABLA DE TALLES Y CUIDADOS</li>
-					</ul>
-					<ul class="lista"> 	
-						<p class="titulos-listas">AYUDA</p>
-						<li>CÓMO COMPRAR</li>
-						<li>ENVÍOS</li>
-						<li>FORMAS DE PAGO</li>
-						<li>CAMBIOS Y DEVOLUCIONES</li>
-						<li>PREGUNTAS FRECUENTES</li>
-						<li>SEGUIMIENTO DE PEDIDO</li>
-						<li>TÉRMINOS Y CONDICIONES</li>
-						<li>POLÍTICAS DE PRIVACIDAD</li>
-						</ul>
-					<ul class="lista"><p class="titulos-listas">SOBRE COMPLOT</p>
-						<li>TRABAJA CON NOSOTROS</li>
-						<li>NUESTROS LOCALES</li>
-						<li>CONTACTO</li> 
-					</ul>
-				</div>
+		<div class="listas-footer">
+			<ul class="lista">
+				<p class="titulos-listas">TALLES Y CUIDADOS</p>
+				<li>TABLA DE TALLES Y CUIDADOS</li>
+			</ul>
+			<ul class="lista">
+				<p class="titulos-listas">AYUDA</p>
+				<li>CÓMO COMPRAR</li>
+				<li>ENVÍOS</li>
+				<li>FORMAS DE PAGO</li>
+				<li>CAMBIOS Y DEVOLUCIONES</li>
+				<li>PREGUNTAS FRECUENTES</li>
+				<li>SEGUIMIENTO DE PEDIDO</li>
+				<li>TÉRMINOS Y CONDICIONES</li>
+				<li>POLÍTICAS DE PRIVACIDAD</li>
+			</ul>
+			<ul class="lista">
+				<p class="titulos-listas">SOBRE COMPLOT</p>
+				<li>TRABAJA CON NOSOTROS</li>
+				<li>NUESTROS LOCALES</li>
+				<li>CONTACTO</li>
+			</ul>
+		</div>
 	</footer>
-<script>
-  $(document).ready(function() {
-    $('[data-fancybox="images"]').fancybox({
-      loop: true,
-      thumbs: {
-        autoStart: true
-      }
-    });
-  });
-</script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("[data-fancybox]").fancybox({
+				buttons: [
+					"zoom",
+					"slideShow",
+					"fullScreen",
+					"thumbs",
+					"close"
+				],
+				infobar: false,
+				loop: true,
+			});
+		});
+	</script>
 </body>
 </html>
+

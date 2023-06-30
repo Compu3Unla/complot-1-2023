@@ -24,6 +24,7 @@ header {
 	position: fixed;
     background-color: #FFFFFF;
 	padding-bottom: 20px;
+	opacity: 0.9;
 }
 
 h3, h4, h5 {
@@ -50,20 +51,17 @@ h5 {
 	display: flex;
 	font-size: 12px;
 	width: 100%;
-	padding-top:10px;
-	padding-bottom: 0px;
-	padding-right: 40px;
+	padding: 10px 40px 0px 0px;
 	color:#737373;
 	justify-content: flex-end;
 }
+
 
 #cuotas {
 	padding: 15px;
 	width: 100%;
 	align-items: center;
 	align-content: center;
-	font-family: lato;
-	font-style: normal;
 	font-size: 12px;
 	line-height: 15px;
 	color: #FFFFFF;
@@ -79,13 +77,20 @@ p {
 	display: flex; 
 	margin-right: 20px;
 	box-sizing: content-box;
-	text-decoration: underline;	}
+}
+
+a:hover {
+	text-decoration: underline;
+	 cursor: pointer;
+}
 
 .ingreso {
 	display: flex;
 	box-sizing: content-box;
 	column-gap: 10px;
 }
+
+
 #cuotas{
 	width: 100%;
 	padding-bottom: 10px;
@@ -96,9 +101,7 @@ p {
 	height: 100%;
 	font-size: 14px;
 	color:#737373;
-	padding-top: 10px;
-	padding-left: 10px;
-	margin-top: 10px;	
+	padding: 20px 0px 0px 10px;	
 	box-sizing: border-box;
 }
 
@@ -107,46 +110,52 @@ p {
 	width: 100%;
 	box-sizing: border-box;
 	justify-content: space-around;
-	padding-right: 5%;
-	padding-left: 10%;
+	padding: 0 5% 0 10%;
 }
 
 .suscripcion {
 	display: flex;
 	width: 100%;
 	justify-content: center;
-	padding-top: 20px;
+	padding: 20px 0 0 0;
 }
 
 #logo {
 	display:flex;
 	justify-content: center;
-	padding-bottom: 20px;
-	padding-top: 20px;
+	padding: 20px 0 20px 0;
 }
 
 #buscar {
 	display: flex;
 	display: block;
 	box-sizing: border-box;
+	cursor: pointer;
 }
 
 #menu-small {
 	width: 100%;
 	display: none;
-	padding-left: 05px;
-	padding-right: 05px;
+	padding: 0 5px 0 5px;
 }
 
 #lupa-shop {
 	display:flex;
 	flex-direction: row-reverse;
-	padding-right: 3%;
+	padding: 0 3% 0 0;
+	cursor: pointer;
 }
 
 #desplegable {
-	padding-left: 3%;
-	padding-right: 40px;
+	margin: 0 40px 0 3%;
+	display: inline-block;
+	cursor: pointer;
+}
+
+
+.lista-desplegable {
+	
+	
 }
 
 .navegacion{
@@ -154,25 +163,21 @@ p {
 	margin-right: 40px;
 	}
 
-.gallery {
-	display:flex;
-	width: 100%;
-	padding: 0%;
-	margin: 0%;
-}
-
 div a img {
 	width: 100%;
 	height: auto;
-	padding-top: 0px;
+	padding: 0px;
+	cursor: pointer;
+}
+
+.espacio-header {
+	padding: 190px 0px 0px 0px;
 }
 
 .grid-container {
 	width: 100%;
 	height: 100%;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-top: 140px;
+	padding: 20px 5% 0 5%;
 	display: grid;
 	grid-template-columns: 33% 33% 33%;
 	grid-template-rows: auto;
@@ -185,6 +190,7 @@ div a img {
 	display: block;
 	grid-gap: 1%;
 	justify-content: space-around;
+	cursor: pointer;
 }
 
 .hashtag {
@@ -195,34 +201,31 @@ div a img {
     margin-bottom: 30px;
     text-align: center;
 	justify-content: center;
-	
 }
+
 .botonera-redes {
 	display: grid;
 	justify-content: space-around;
 	width: 100%;
 	height: 100%;
 	grid-template-columns: 24% 24% 24% 24%;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-top: 10px;
-	grid-gap: 1%x;
+	padding: 10px 5% 0 5%;
+	grid-gap: 1%;
 }
 
 .botonera-redes img {
 	width: 100%;
 	height: auto;
 	align-content: space-around;
+	cursor: pointer;
 }
 
 footer {
 	width: 100%;
 	height: 100%;
-	margin-top: 20px;
-	margin-bottom: 0px;
-	padding-left: 5%;
-	padding-right: 5%;
+	padding: 20px 5% 0 5%;
 }
+
 	.newsletter {
 	display: flex;
 	flex-direction: column;
@@ -241,18 +244,13 @@ footer {
 }
 
 .suscribirse-boton {
-	margin:0px;
-	padding-bottom: 20px;
+	padding: 0 0 20px 0;
 	box-sizing: border-box;
 	display: flex;
 	align-content: center;
 	align-self:center;
 	align-items: center;
-}
-
-.suscribirse-boton {
-	display: flex;
-	justify-content: center;
+	cursor: pointer;
 }
 
 .contacto {
@@ -260,8 +258,7 @@ footer {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	padding-top: 40px;
-	padding-bottom: 25px;
+	padding: 40px 0 25px 0;
  	border-top: 1px solid #797979;
   	border-bottom: 1px solid #797979;;
 }
@@ -280,17 +277,17 @@ footer {
 .atencion {
 	display: flex;
 	justify-content: center;
-	padding-top: 25px;
+	padding: 25px 0 0 0;
 }
 
 .ayuda {
 	text-align: center;
-	padding-top: 40px;
+	padding: 40px 0 0 0;
 }
 
 .lista {
 	text-align: center;
-	padding-top: 40px;
+	padding: 40px 0 0 0;
 }
 
 li { 
@@ -312,7 +309,7 @@ li {
 
 .titulos-listas {
 	font-size: 12px;
-	padding-bottom: 30px;
+	padding: 0 0 30px 0;
 	font-weight: bold;
 }
 
@@ -321,28 +318,35 @@ li {
 	#barra {
 		display: none;
 	}
+	
 	.botonera-head {
 		display: none;
 	}
 	
+	
 	#logo {
-	display: none;
+		display: none;
 	}
 	
 	.gallery {
-	display: none;
+		display: none;
 	}
 	
 	#cuotas {
-		padding-bottom: 30px;
+		padding: 0 0 30px 0;
+	}
+	
+	.espacio-header {
+		display: none;
+	}
+	
+	header {
+		opacity: 10;
 	}
 	
 	#menu-small {
-	display: flex;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 05px;
-	padding-right: 05px;
+		display: flex;
+		padding: 20px 5px 20px 5px;
 	}
 	
 	.logo-small {
@@ -353,9 +357,16 @@ li {
 	}
 	
 	header {
-		padding-bottom:0px;
+		padding:0px;
 	}
 	
+	#cuotas {
+	width: 100%;
+	box-sizing: content-box;
+	align-self: center;
+	justify-content: center;
+	padding: 10px 0px 30px 0px;
+	}
 	.listas-footer {
 		display: flex;
 		flex-direction: column;
@@ -363,22 +374,20 @@ li {
 	}
 	
 	.grid-container {
-	display: grid;
-	width: 100%;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-top: 140px;
-	grid-template-columns: 50% 50%;
-	grid-column-gap: 10px;
-	grid-row-gap: 10px;
+		display: grid;
+		width: 100%;
+		padding: 110px 5% 0 5%; 
+		grid-template-columns: 50% 50%;
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
 	}
 	
-.grid-container img {
-	display: grid;
-	padding:0;
-	grid-area: 2px;
-	justify-content: space-between;
-	gap-area: 5px;
+	.grid-container img {
+		display: grid;
+		padding:0;
+		grid-area: 2px;
+		justify-content: space-between;
+		gap-area: 5px;
 	}
 }
 	
