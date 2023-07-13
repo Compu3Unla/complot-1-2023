@@ -1,12 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
+<meta charset="utf-8">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>index</title>
+	<title>formulario</title>
 	<link href="complot-estilos.css" rel="stylesheet" type="text/css">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
-	<link rel="icon" type="imagenes/x-icon" href="/imagenes/favicon.ico">
 </head>
 <body>
 	<header>
@@ -19,7 +18,7 @@
 			</div>
 			
 			<div class="logo-small">
-				<a href="index.html"><img src="imagenes/logo.svg" alt="complot"/></a>
+				<img src="imagenes/logo.svg" alt="complot"/>
 			</div>
 			<div id="lupa-shop">
 				<img src="imagenes/shop.png" width="30" height="28" alt="shop"/>
@@ -38,41 +37,47 @@
 				<a href="coming-soon.html"><h2>AW23</h2></a>
 				<a href="coming-soon.html"><h3>SHOP</h3></a>
 				<a href="coming-soon.html"><h3>ESSENCIALS</h3></a>
-				<a href="coming-soon.html"><h3>OUTLET</h3></a>
+				<a href="coming-soon.html"><h3>OUTLET</h3>
+				</a>
 			</nav>
 			<div class="buscador">
 				<input type="buscar" name="buscar" id="buscar" maxlength="20" placeholder="BUSCAR" required> <img src="imagenes/lupa.png" width="30" height="28" alt="lupa"/>
 			</div>
 		</div>
 	</header>
-	<main>
-		<div class="gallery">
-			<a data-fancybox="gallery" href="imagenes/carrusel/banner-home-01.jpg"><img src="imagenes/carrusel/banner-home-01.jpg" width="2440" height="1167" alt="banner01"/></a>
-			<a data-fancybox="gallery" href="imagenes/carrusel/banner-home-02.jpg"></a>
-			<a data-fancybox="gallery" href="imagenes/carrusel/banner-home-03.jpg"></a>
-			<a data-fancybox="gallery" href="imagenes/carrusel/banner-home-04.jpg"></a>
-			<a data-fancybox="gallery" href="imagenes/carrusel/banner-home-05.jpg"></a>
-			<a data-fancybox="gallery" href="imagenes/carrusel/banner-home-06.jpg"></a>
-			<a data-fancybox="gallery" href="imagenes/carrusel/banner-home-07.jpg"></a>
-			<a data-fancybox="gallery" href="imagenes/carrusel/banner-home-08.jpg"></a>
-		</div>
-		<section class="grid-container">
-			<img src="imagenes/botonera-imagenes/boton-jeans.jpg" alt="Jeans"/>
-			<img src="imagenes/botonera-imagenes/boton-lookbook.jpg" alt="Lookbook"/>
-			<img src="imagenes/botonera-imagenes/boton-accesorios.jpg" alt="Accesorios"/>
-			<img src="imagenes/botonera-imagenes/boton-sport.jpg" alt="Sport"/>
-			<img src="imagenes/botonera-imagenes/boton-abrigos.jpg" alt="Abrigos"/>
-			<img src="imagenes/botonera-imagenes/boton-standart-series.jpg" alt="Standart"/>
-		</section>
-		<div class="video"><iframe title="vimeo-player" src="https://player.vimeo.com/video/714205564?h=960032b4c0" width="640" height="360" frameborder="0" allowfullscreen></iframe></div>
-		<div class="hashtag"><a href="index.html" class="complotrock">#COMPLOTROCK</a></div>
-		<div class="botonera-redes">
-			 <a href="https://www.facebook.com/complot.com.ar" target="_blank"><img src="imagenes/botonera-redes/boton-fb.jpg" width="250" height="250" alt="facebook"/></a>
-			<a href="https://www.instagram.com/complotrock" target="_blank"><img src="imagenes/botonera-redes/boton-ig.jpg" width="250" height="250" alt="instagram"/></a>
-			<a href="https://www.tiktok.com/@complotrock" target="_blank"><img src="imagenes/botonera-redes/boton-tiktok.jpg" width="250" height="250" alt="tiktok"/></a>
-			<a href="https://vimeo.com/740017550" target="_blank"><img src="imagenes/botonera-redes/boton-youtube.jpg" width="250" height="250" alt="vimeo"/></a>
-		</div>
-	</main>
+	<section class="formulario">
+		<h1 class="titulo-formulario"> FORMULARIO DE ARREPENTIMIENTO </h1>
+		<p class="texto-formulario">Tenés hasta 10 días de corrido a partir de la entrega del producto para realizar el arrepentimiento.
+		</p>
+		<form method="post" action="mailto:aylentemer@gmail.com?subject=Formulario Complot" target="_blank" enctype="text/plain">
+			<label for="Nombre">Nombre completo<br>
+		    </label>
+			<input type="text" name="Nombre" id="Nombre" maxlength="70" placeholder="Nombre y apellido" required>
+			
+			<label for="Email">Email </label>
+			<input type="Email" name="Email" id="Email" maxlength="100" placeholder="example@gmail.com" required>
+			
+			<label for="Nacimiento">Fecha de nacimiento</label>
+			<input type="date" name="Nacimiento" id="Nacimiento" maxlength="9" required>
+			
+			<label for="DNI">DNI</label>
+			<input type="DNI" name="DNI" id="DNI" maxlength="9" placeholder="12.345.678" required>
+			
+			<label for="Numero de pedido"> Numero de pedido </label>
+			<input type="Num" name="Num" id="Num" maxlength="8" placeholder="00000000" required>
+			
+			<section class="cambio">
+				<p class="motivo-cambio">Motivo de cambio</p>
+				<div class="opciones-cambio">
+					<label>Error de talle <input type="radio" name="motivo" value="Error de talle" id="Error de talle"></label>
+					<label>Falla del producto <input type="radio" name="motivo" value="Falla" id="Falla"></label>
+					<label>No es lo que pedí <input type="radio" name="motivo" value="Falla del producto" id="Falla en el producto"></label>
+					<label>Otro <input type="radio" name="motivo" value="Otro" id="Otro"></label>
+				</div>
+			</section>
+				<input type="submit" value="Enviar" formenctype="text/form" class="boton-form">
+		</form>
+	</section>
 	<footer>
 		<section class="newsletter">
 			<h1> SUSCRIBETE AL NEWSLETTER </h1>
@@ -120,23 +125,5 @@
           <a href="formulario.html"><img class="boton-arrepentimiento" src="imagenes/formulario-arrepentimiento.png" width="180" height="70" alt="formulario-de-arrepentimiento"/></a></section>
 		</div>
 	</footer>
-	
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-			$("[data-fancybox]").fancybox({
-				buttons: [
-					"zoom",
-					"slideShow",
-					"fullScreen",
-					"thumbs",
-					"close"
-				],
-				infobar: false,
-				loop: true,
-			});
-		});
-    </script>
 </body>
 </html>
